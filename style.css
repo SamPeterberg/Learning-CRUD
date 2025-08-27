@@ -4,23 +4,32 @@ body{
     padding: 0;
     box-sizing: border-box;
     background: #f0f0f0;
-}
-.container{
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
+}  
+h1{
     text-align: center;
+    color: #000000;
 }
-.input{
-    width: 10rem;
-    height: 10rem;
-    background: white;
-    color: rgb(143, 143, 143);
-    font-size: 70px;
-    line-height: 50px;
-    border-radius: 16px;
+#note{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    width: 30%;
+}
+#submit{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #008004;
+    color: white;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    user-select: none;
-    margin: auto;
+}
+#submit:hover {
+    background-color: #15f800;
+}
+#submit:active{
+    box-shadow: 1px 1px 5px inset rgb(0, 0, 0);
 }
