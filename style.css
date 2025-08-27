@@ -1,0 +1,26 @@
+body{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f0f0f0;
+}
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+}
+.input{
+    width: 10rem;
+    height: 10rem;
+    background: white;
+    color: rgb(143, 143, 143);
+    font-size: 70px;
+    line-height: 50px;
+    border-radius: 16px;
+    cursor: pointer;
+    user-select: none;
+    margin: auto;
+}
