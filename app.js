@@ -1,5 +1,5 @@
 
-let note = document.getElementById("note").value
+let note = document.getElementById("note")
 let add = document.getElementById("submit")
 let notesContainer = document.getElementById("notesContainer");
 let notes = {}
@@ -27,12 +27,11 @@ function error(){
 
 add.addEventListener("click", (e)=>{
     e.preventDefault()
-    if(note=="" || note==" " || typeof(note)==Number){
+    if(note.value=="" || note.value==" "){
         error()
     }else{
         success()
         note.value = ""
-
     }
 })
 

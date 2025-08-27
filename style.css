@@ -13,7 +13,13 @@ h1{
     display: flex;
     align-self: center;
     justify-self: center;
-    width: 30%;
+    width: 100%;
+    border: none;
+    background-color: #f9f9f9;
+    padding-inline: 10px
+}
+#note:focus{
+    outline: none;
 }
 #submit{
     display: flex;
@@ -32,4 +38,25 @@ h1{
 }
 #submit:active{
     box-shadow: 1px 1px 5px inset rgb(0, 0, 0);
+}
+textarea{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+    
+}
+form{
+        background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    justify-content: center;
+align-self: center;
+justify-self: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 40%;
+    resize: none;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
