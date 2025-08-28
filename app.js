@@ -1,22 +1,10 @@
 
-let note = document.getElementById("note")
 let add = document.getElementById("submit")
 let notesContainer = document.getElementById("notesContainer");
-let notes = {}
-
-
-function success() {
-    
-        Swal.fire({
-          title: "✔ Success!",
-          text: "Your Note Has been Added",
-          icon: "success",
-          confirmButtonText: "OK",
-        });
-}
+let notes = []
 
 function error(){
-    Swal.fire({
+  Swal.fire({
       title: "❌ Alert!",
       text: "Please write a Valid Note",
       icon: "error",
@@ -26,13 +14,15 @@ function error(){
 
 
 add.addEventListener("click", (e)=>{
-    e.preventDefault()
-    if(note.value=="" || note.value==" "){
+  e.preventDefault()
+  let noteInput = document.getElementById("note");
+  let note = noteInput.value;
+    if(note =="" || note ==" "){
         error()
     }else{
-        success()
-        notesContainer.innerHTML += note.value
-        note.value = ""
+      notes.push(note);
+      
+      noteInput.value = "";
     }
 })
 
