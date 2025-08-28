@@ -31,6 +31,7 @@ add.addEventListener("click", (e)=>{
         error()
     }else{
         success()
+        notesContainer.innerHTML += note.value
         note.value = ""
     }
 })
