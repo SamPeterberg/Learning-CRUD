@@ -8,11 +8,16 @@
 </head>
 <body>
     <h1>My Note Book</h1>
-    <form action="">
-        <textarea name="note" rows="5" id="note" placeholder="Write a Note"></textarea>
-        <input type="submit" id="submit" value="Add Note">
-    </form>
-    
+    <div id="container">
+        <textarea name="noteInput" rows="5" id="noteInput" placeholder="Write a Note"></textarea>
+        <input type="submit" id="submit" onclick="addNote()" value="Add Note">
+</div>
+    <div >
+        <ul id="notesList">
+            <!-- Notes will be dynamically added here -->
+            
+        </ul>
+    </div>
 </body>
 <script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

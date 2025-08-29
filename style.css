@@ -4,12 +4,14 @@ body{
     padding: 0;
     box-sizing: border-box;
     background: #f0f0f0;
+    min-height: 100vh;
+    width: 100vw;
 }  
 h1{
     text-align: center;
     color: #000000;
 }
-#note{
+#noteInput{
     display: flex;
     align-self: center;
     justify-self: center;
@@ -18,7 +20,7 @@ h1{
     background-color: #f9f9f9;
     padding-inline: 10px
 }
-#note:focus{
+#noteInput:focus{
     outline: none;
 }
 #submit{
@@ -42,33 +44,69 @@ h1{
 textarea{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: large;
+    overflow: hidden ;
+    resize: none;
+
     
 }
-form{
-        background-color: #f9f9f9;
+#container{
+    background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px;
+    margin: 20px auto;
     justify-content: center;
-align-self: center;
-justify-self: center;
+    align-self: center;
+    justify-self: center;
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 10px;
-    width: 40%;
-    resize: none;
+    width: 60%;
+    min-width: 250px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
-#notesContainer{
-   min-height:150px;
-   width: 10%;
-   border:1px solid gray;
-   padding: 10px;
-   margin: 10px;
-   box-shadow:2px 2px 5px gray;
-   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-   font-weight: bold;
-   font-size: large;
-    
+#note{
+     min-height: 100px;
+     width: 40%;
+     border:1px solid gray;
+     padding: 10px;
+     margin: 10px 0;
+     box-shadow:2px 2px 5px gray;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: bold;
+     font-size: large;
+     list-style-type: none;
+}
+/* Responsive Design */
+@media (max-width: 900px) {
+    form {
+        width: 60%;
+        max-width: 90vw;
+    }
+    #note {
+        min-width: 90%;
+        font-size: medium;
+    }
+}
+
+@media (max-width: 480px) {
+    form {
+        width: 100%;
+        min-width: 90vw;
+        padding: 5px;
+        margin: 10px auto;
+    }
+    #note {
+        font-size: small;
+        padding: 6px;
+    }
+    #submit {
+        width: 100%;
+        font-size: medium;
+        padding: 8px;
+    }
+    #noteInput {
+        width: 100%;
+        padding-inline: 5px;
+    }
 }
