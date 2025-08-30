@@ -4,8 +4,8 @@ body{
     padding: 0;
     box-sizing: border-box;
     background: #f0f0f0;
-    min-height: 100vh;
-    width: 100vw;
+    /* min-height: 100vh; */
+    /* width: 100vw; */
 }  
 h1{
     text-align: center;
@@ -29,17 +29,18 @@ h1{
     justify-self: center;
     margin-top: 10px;
     padding: 10px;
-    background-color: #008004;
+    background-color: rgb(97, 97, 97);
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 #submit:hover {
-    background-color: #15f800;
+    background-color: #303030;
 }
 #submit:active{
-    box-shadow: 1px 1px 5px inset rgb(0, 0, 0);
+    box-shadow: 1px 1px 5px inset rgb(255, 255, 255);
+    
 }
 textarea{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -61,13 +62,13 @@ textarea{
     border-radius: 5px;
     border: 1px solid #ccc;
     padding: 10px;
-    width: 60%;
+    width: 50%;
     min-width: 250px;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
 }
 #note{
      min-height: 100px;
-     width: 40%;
+     width: 20%;
      border:1px solid gray;
      padding: 10px;
      margin: 10px 0;
@@ -76,6 +77,11 @@ textarea{
      font-weight: bold;
      font-size: large;
      list-style-type: none;
+}
+#notesContainer{
+    width: 100%;
+}
+#noteLists{
 }
 /* Responsive Design */
 @media (max-width: 900px) {

@@ -1,5 +1,5 @@
 var note = document.getElementById("noteInput");
-let notes = []
+var notes = []
 
 
 
@@ -16,10 +16,10 @@ let notes = []
   }
   
   function showNote() {
-  var notesList = document.getElementById("notesList");
+  var notesList = document.getElementById("notesLists");
   notesList.innerHTML = "  "
   for (let i = 0; i < notes.length; i++) {
-      notesList.innerHTML = `<li id="note">
+      notesList.innerHTML += `<li id="note">
                 <span>${notes[i]}
                 </span>
             </li>`;    
