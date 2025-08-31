@@ -24,6 +24,11 @@ var notes = []
                 </span>
             </li>`;    
   }
+  let deleteBtn = document.createElement("button") 
+  deleteBtn.textContent = "Delete"
+  deleteBtn.addEventListener("click",()=>{
+    console.log("hi")
+  })
 }
 
   function error(){
@@ -34,3 +39,8 @@ var notes = []
         confirmButtonText: "OK",
       });
     }
+
+//  let remove = document.getElementById("del")
+//  remove.addEventListener("click",()=>{
+//   console.log("gi")
+//  })
